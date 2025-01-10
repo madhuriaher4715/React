@@ -7,9 +7,11 @@ import Login from './page/Login/Login.jsx';
 import Register from './page/Register/Register.jsx';
 import NotFound from './page/NotFound/NotFound.jsx';
 import About from './page/About/About.jsx';
+import Nav from './page/nav/nav.jsx';
 
 createRoot(document.getElementById('root')).render(
   <BrowserRouter>
+  <Nav/>
      <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/login" element={<Login />} />
