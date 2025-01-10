@@ -13,20 +13,20 @@ import Footer from './page/Footer/Footer.jsx';
 
 createRoot(document.getElementById('root')).render(
   <BrowserRouter>
-  <Nav/>
-  
- 
-     <Routes>
+    <Nav />
+
+
+    <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/login" element={<Login />} />
-      <Route path='/register' element={<Register/>} />
+      <Route path='/register' element={<Register />} />
       <Route path='/about' element={<About />} />
       <Route path='*' element={<NotFound />} />
 
-      
 
-    
+
+
     </Routes>
-    <Footer/>
+    <Footer />
   </BrowserRouter>,
 )
