@@ -4,23 +4,22 @@ import { Link} from "react-router";
 const Navbar = () => {
   return (
     <>
-      <nav className=" sticky top-0 bg-white shadow-md p-4 cursor-pointer">
+   
+      <nav className="mt-0  rounded-md bg-white shadow-md p-4 cursor-pointer bg-gradient-to-r from-blue-400 via-purple-500">
         <div className=" flex justify-between">
           <div className=" flex flex-row hover:underline">
-            <div className=" font-medium">List</div>
-            <div className=" font-medium text-red-500">Race</div>
+          <div className=" flex items-center">
+            <div>Simple Page</div>
+            </div>
           </div>
           <ul className="hidden gap-6 md:flex">
             <li className=" hover:text-red-500 cursor-pointer font-medium text-gray-500  hover:underline space-y-1">
               <Link to="/"> HOME </Link>
             </li>
             <li className=" hover:text-red-500 cursor-pointer font-medium text-gray-500  hover:underline space-y-1">
-              ABOUT
+            <Link to="/about">ABOUT</Link>
             </li>
- 
-            <li className=" hover:text-red-500 cursor-pointer font-medium text-gray-500  hover:underline space-y-1">
-              SERVICES
-            </li>
+
             <li className=" hover:text-red-500 cursor-pointer font-medium text-gray-500  hover:underline space-y-1">
               <Link to="/Contact">CONTACT</Link>
             </li>
@@ -33,6 +32,7 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
+      
     </>
   );
 };
